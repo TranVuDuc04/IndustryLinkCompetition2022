@@ -123,8 +123,9 @@ const About = () => {
         <div className="row4">
           <div className="TA9">
             <div className="location">
-              <p className="city">Mt Waverley</p>
-              <p className="no_locations">1 location</p>
+              <p className="city mobile-location-title">Our location</p>
+              <p className="city desktop-location-title">Mt Waverley</p>
+              <p className="no_locations desktop-location-title">1 location</p>
               <div className="locations_content">
                 <img src="/pictures/128-comfort-town-berezen-studio_9.jpg" className="cafe_locations" alt="Mt Waverley" />
                 <p className="lo">
@@ -162,7 +163,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <h1 className="members">Founders</h1>
+      <h1 className="members">Our Founders</h1>
       <div className="row2">
         <div className="hi1">
           <span className="photo">

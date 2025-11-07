@@ -65,7 +65,7 @@ const Shop = () => {
                 onClick={() => toggleCategory('coffee')}
               >
                 <span><small>&#62; &#160;</small>Coffee</span>
-                <span>{expandedCategories.coffee ? '▼' : '▶'}</span>
+                <i className={`fa-solid ${expandedCategories.coffee ? 'fa-chevron-down' : 'fa-chevron-right'} category-arrow`}></i>
               </div>
               {expandedCategories.coffee && (
                 <ul className="subcategory_list">
@@ -116,7 +116,7 @@ const Shop = () => {
                 onClick={() => toggleCategory('food')}
               >
                 <span><small>&#62; &#160;</small>Food</span>
-                <span>{expandedCategories.food ? '▼' : '▶'}</span>
+                <i className={`fa-solid ${expandedCategories.food ? 'fa-chevron-down' : 'fa-chevron-right'} category-arrow`}></i>
               </div>
               {expandedCategories.food && (
                 <ul className="subcategory_list">
