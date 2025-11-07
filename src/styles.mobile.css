@@ -291,7 +291,7 @@
         font-weight: 500 !important;
         margin: 0 !important;
         padding: 0 !important;
-        margin-top: -3.5rem !important;
+        margin-top: -2.5rem !important;
         box-sizing: border-box !important;
         background: none !important;
         font-family: 'Rubik', sans-serif !important;
@@ -736,6 +736,7 @@
         box-sizing: border-box !important;
         text-align: center !important;
         font-family: 'Rubik', sans-serif !important;
+        color: #000000 !important;
     }
     
     .hi1 {
@@ -1482,7 +1483,7 @@
         font-size: 0.95rem !important; 
         width: 88% !important;
         max-width: 340px !important;
-        margin-top: -3.25rem !important;
+        margin-top: -2.25rem !important;
         line-height: 1.6 !important;
     }
     
