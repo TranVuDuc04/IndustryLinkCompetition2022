@@ -132,14 +132,6 @@ const About = () => {
                   <br /><span className="contact-label">Contact us via</span> <a href="mailto:Beoicafe@outlook.com" className="luxury-email">Beoicafe@outlook.com</a>
                 </p>
               </div>
-              <div className="social-section">
-                <h2>Social:</h2>
-                <div className="TA10">
-                  <a href="#"><i className="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
             </div>
           </div>
           <div className="TA1">
@@ -161,18 +153,26 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className="social-section">
+          <h2>Social:</h2>
+          <div className="TA10">
+            <a href="#"><i className="fa-brands fa-facebook"></i></a>
+            <a href="#"><i className="fa-brands fa-twitter"></i></a>
+            <a href="#"><i className="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
       </div>
       <h1 className="members">Founders</h1>
       <div className="row2">
         <div className="hi1">
           <span className="photo">
-            <img src="https://ui-avatars.com/api/?name=Person+1&size=224&background=e8dcc6&color=333&bold=true&font-size=0.8" style={{width: '14rem', height: '17rem', objectFit: 'cover', borderRadius: '8px'}} alt="Founder 1" />
+            <img src="https://ui-avatars.com/api/?name=Person+1&size=224&background=e8dcc6&color=333&bold=true&font-size=0.8" style={{width: '10rem', height: '12rem', objectFit: 'cover', borderRadius: '8px'}} alt="Founder 1" />
           </span>
           <h3 className="header">Person 1</h3>
         </div>
         <div className="hi1">
           <span className="photo">
-            <img src="https://ui-avatars.com/api/?name=Person+2&size=224&background=d4c4a8&color=333&bold=true&font-size=0.8" style={{width: '14rem', height: '17rem', objectFit: 'cover', borderRadius: '8px'}} alt="Founder 2" />
+            <img src="https://ui-avatars.com/api/?name=Person+2&size=224&background=d4c4a8&color=333&bold=true&font-size=0.8" style={{width: '10rem', height: '12rem', objectFit: 'cover', borderRadius: '8px'}} alt="Founder 2" />
           </span>
           <h3 className="header">Person 2</h3>
         </div>
