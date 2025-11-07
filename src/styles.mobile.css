@@ -408,9 +408,9 @@
     .location_in4 { 
         width: 100% !important; 
         max-width: 100% !important;
-        font-size: 0.85rem !important;
+        font-size: 0.7rem !important;
         font-weight: 500 !important;
-        padding: 0.75rem 0.5rem !important;
+        padding: 0.75rem 0.4rem !important;
         margin: 0 !important;
         background-color: #69513c !important;
         color: white !important;
@@ -418,10 +418,10 @@
         box-sizing: border-box !important;
         border: none !important;
         text-transform: uppercase !important;
-        letter-spacing: 0.5px !important;
-        white-space: nowrap !important;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
+        letter-spacing: 0.3px !important;
+        line-height: 1.3 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
     }
 
     .feedback { 
@@ -594,32 +594,44 @@
     }
     
     .advanced { 
-        grid-template-areas: 'ad1' 'ad2' 'ad3' !important; 
-        grid-template-columns: 1fr !important; 
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        justify-content: space-between !important;
+        position: relative !important;
         margin-top: 3rem !important; 
         width: 100% !important; 
         max-width: 100vw !important;
-        padding: 0 1rem !important; 
+        padding: 0 0.75rem !important; 
         box-sizing: border-box !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
-        gap: 2rem !important;
+        gap: 0.5rem !important;
+        min-height: 400px !important;
     }
     
     .ad1, .ad3 { 
         margin: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
+        width: calc(50% - 60px) !important;
+        max-width: calc(50% - 60px) !important;
         box-sizing: border-box !important;
+        flex-shrink: 0 !important;
+        position: relative !important;
+        z-index: 1 !important;
     }
     
     .ad2 { 
-        margin: 2rem auto !important; 
-        width: 100% !important; 
-        max-width: 320px !important;
+        position: absolute !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: auto !important; 
+        max-width: 120px !important;
+        height: auto !important;
+        max-height: 200px !important;
         box-sizing: border-box !important;
-        display: flex !important;
-        justify-content: center !important;
+        z-index: 0 !important;
+        margin: 0 !important;
     }
     
     .ad2 img {
@@ -627,31 +639,69 @@
         max-width: 100% !important;
         height: auto !important;
         box-sizing: border-box !important;
+        object-fit: contain !important;
     }
     
     .feature-item { 
-        flex-direction: column !important; 
-        align-items: center !important; 
-        text-align: center !important; 
-        gap: 1rem !important;
-        margin-bottom: 2rem !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: flex-start !important; 
+        text-align: left !important; 
+        gap: 0.5rem !important;
+        margin-bottom: 1.5rem !important;
     }
     
+    .advanced .feature-item .feature-number,
+    .ad1 .feature-item .feature-number,
+    .ad3 .feature-item .feature-number,
     .feature-number { 
-        width: 80px !important; 
-        height: 80px !important; 
-        font-size: 1.5rem !important; 
+        width: 1rem !important; 
+        height: 1rem !important; 
+        min-width: 1rem !important;
+        min-height: 1rem !important;
+        max-width: 1rem !important;
+        max-height: 1rem !important;
+        font-size: 0.5rem !important;
+        font-weight: bold !important;
+        background: #e8dcc6 !important;
+        color: #333 !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+        box-shadow: none !important;
     }
     
+    .feature-content {
+        flex: 1 !important;
+        min-width: 0 !important;
+    }
+    
+    .advanced .feature-item .feature-title,
+    .ad1 .feature-item .feature-title,
+    .ad3 .feature-item .feature-title,
     .feature-title { 
-        font-size: 1.4rem !important; 
-        margin-bottom: 0.5rem !important;
+        font-size: 0.6rem !important;
+        font-weight: bold !important;
+        color: #333 !important;
+        margin: 0 0 0.3rem 0 !important;
+        line-height: 1.3 !important;
     }
     
+    .ad1 .feature-item[data-number="01"] .feature-title {
+        color: red !important;
+    }
+    
+    .advanced .feature-item .feature-description,
+    .ad1 .feature-item .feature-description,
+    .ad3 .feature-item .feature-description,
     .feature-description { 
-        font-size: 0.95rem !important; 
-        line-height: 1.6 !important;
-        max-width: 90% !important;
+        font-size: 0.5rem !important; 
+        color: #666 !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
+        text-align: left !important;
     }
     
     .row2 {
@@ -1100,31 +1150,62 @@
     }
 
     .footer-bottom { 
-        flex-direction: column !important; 
-        gap: 1rem !important; 
-        padding: 1.5rem 1rem !important; 
-        text-align: center !important;
+        flex-direction: row !important; 
+        gap: 0.25rem !important; 
+        padding: 1rem 0.75rem !important; 
+        align-items: center !important;
+        justify-content: space-between !important;
         width: 100% !important;
         max-width: 100vw !important;
         box-sizing: border-box !important;
+        position: relative !important;
     }
     
     .footer-bottom img { 
-        width: 80px !important; 
+        width: auto !important; 
+        height: 2.5rem !important;
         max-width: 80px !important;
-        height: auto !important;
-        position: relative !important;
-        left: auto !important;
-        top: auto !important;
-        transform: none !important;
-        margin: 0.5rem 0 !important;
+        position: absolute !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        margin: 0 !important;
+        opacity: 0.9 !important;
+        object-fit: contain !important;
+        z-index: 0 !important;
     }
     
-    .copyright, .tagline { 
-        font-size: 0.85rem !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        text-align: center !important;
+    .copyright { 
+        font-size: 0.28rem !important;
+        font-weight: bold !important;
+        color: white !important;
+        text-align: left !important;
+        flex: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.15rem !important;
+        margin: 0 !important;
+        padding-right: 0.5rem !important;
+        z-index: 1 !important;
+        white-space: nowrap !important;
+        max-width: calc(50% - 45px) !important;
+    }
+    
+    .copyright i {
+        font-size: 0.25rem !important;
+    }
+    
+    .tagline { 
+        font-size: 0.6rem !important;
+        font-style: italic !important;
+        color: #ead6bf !important;
+        text-align: right !important;
+        flex: 1 !important;
+        margin: 0 !important;
+        padding-left: 0.5rem !important;
+        z-index: 1 !important;
+        white-space: nowrap !important;
+        max-width: calc(50% - 45px) !important;
     }
     
     #TA_footer .footer-content {
