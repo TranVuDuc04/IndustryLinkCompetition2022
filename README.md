@@ -1,6 +1,6 @@
-# DAV Coffee - React Application
+# Coffee - React Application
 
-This is a React.js conversion of the DAV Coffee website, a Vietnamese coffee shop e-commerce platform.
+This is a React.js conversion of the Coffee website, a Vietnamese coffee shop e-commerce platform.
 
 ## Features
 

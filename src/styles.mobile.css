@@ -1,0 +1,675 @@
+/* Mobile-specific overrides extracted to a dedicated stylesheet */
+
+@media (max-width: 768px) {
+    /* Completely prevent horizontal scrolling */
+    * {
+        max-width: 100vw;
+    }
+
+    html {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        position: relative !important;
+        box-sizing: border-box !important;
+    }
+
+    body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        position: relative !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    #root {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        position: relative !important;
+        box-sizing: border-box !important;
+    }
+
+    .App {
+        width: 100% !important;
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+        position: relative !important;
+        box-sizing: border-box !important;
+    }
+
+    main {
+        width: 100% !important;
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        box-sizing: border-box !important;
+        position: relative !important;
+    }
+
+    /* Ensure all page containers have consistent width */
+    .row1, .row4, .row2, #contact1 {
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .menu-overlay {
+        display: block !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        height: 100vh !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        z-index: 1500 !important;
+        pointer-events: auto !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    .navbar {
+        padding: 1rem !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        position: relative !important;
+        overflow-x: hidden !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .logo {
+        height: 3rem !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .hamburger {
+        display: flex !important;
+        order: 2 !important;
+        margin-left: auto !important;
+        margin-right: 0 !important;
+        z-index: 1600 !important;
+        position: relative !important;
+        right: 0 !important;
+        left: auto !important;
+        max-width: fit-content !important;
+    }
+
+    .icons {
+        order: 3 !important;
+        margin-left: 0.5rem !important;
+        margin-right: 0 !important;
+        width: fit-content !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .navbar_links {
+        position: fixed !important;
+        top: 0 !important;
+        left: auto !important;
+        right: -100% !important;
+        width: 70% !important;
+        max-width: 300px !important;
+        min-width: 0 !important;
+        height: 100vh !important;
+        background: white !important;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1) !important;
+        transition: right 0.3s ease !important;
+        z-index: 1700 !important;
+        padding-top: 4rem !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        pointer-events: none !important;
+        transform: none !important;
+        box-sizing: border-box !important;
+    }
+
+    .navbar_links.active {
+        right: 0 !important;
+        pointer-events: auto !important;
+    }
+
+    .navbar_links ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar_links li a {
+        padding: 1.5rem 2rem;
+        border-bottom: 1px solid #eee;
+        font-size: 1.1rem;
+    }
+
+    .icons {
+        gap: 0.5rem;
+    }
+
+    .search_box, .user, .order {
+        width: 1.1rem;
+        height: 1.1rem;
+        margin-right: 0.8rem;
+    }
+
+    .about_homepage { 
+        width: 100% !important; 
+        max-width: 100vw !important; 
+        overflow-x: hidden !important; 
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .about_homepage_pic { 
+        height: 20rem !important; 
+        width: 100% !important; 
+        max-width: 100vw !important; 
+        object-fit: cover !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .about_homepage_text { 
+        font-size: 1rem !important; 
+        max-width: 90% !important; 
+        width: 90% !important;
+        padding: 1.5rem !important; 
+        margin-top: -2rem !important;
+        box-sizing: border-box !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    .about_author { 
+        top: 55% !important; 
+        right: auto !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important; 
+        font-size: 1.2rem !important; 
+        padding: 0.5rem 1rem !important;
+        width: auto !important;
+        max-width: 90% !important;
+    }
+    .about_button { 
+        font-size: 1rem !important; 
+        padding: 0.8rem 1.5rem !important; 
+        top: 65% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: auto !important;
+        max-width: 90% !important;
+    }
+
+    .location_homepage { 
+        flex-direction: column !important; 
+        align-items: center !important; 
+        gap: 2rem !important; 
+        width: 100% !important; 
+        max-width: 100vw !important; 
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .locations { 
+        width: 100% !important; 
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .location_pic { 
+        width: 100% !important; 
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box !important;
+    }
+    .location_in4 { 
+        width: 100% !important; 
+        max-width: 100% !important;
+        font-size: 1.2rem !important;
+        box-sizing: border-box !important;
+    }
+    .locations_homepage_text { 
+        font-size: 2rem !important; 
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+    }
+
+    .feedback { width: 100%; padding: 0 1rem; margin-top: 2rem; margin-bottom: 2rem; max-width: 100vw; box-sizing: border-box; }
+    .slider { width: 100% !important; height: auto !important; max-width: 100% !important; box-sizing: border-box !important; }
+    .slides { width: 500% !important; height: auto !important; min-height: 300px; }
+    .slide { width: 20% !important; height: auto !important; min-height: 300px; }
+    .slide img { width: 100% !important; max-width: 100vw !important; height: auto !important; }
+    .feedback_pic { width: 100% !important; height: auto !important; max-height: 400px; min-height: 300px; object-fit: cover; max-width: 100vw !important; }
+    .navigation_manual { width: 100% !important; max-width: 100vw !important; left: 0 !important; right: 0 !important; position: relative !important; }
+    .navigation_auto { width: 100% !important; max-width: 100vw !important; left: 0 !important; right: 0 !important; position: relative !important; }
+    #feedback_sub { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; }
+
+    .row1, .row4 { 
+        flex-direction: column; 
+        padding: 1rem !important; 
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .origin { 
+        padding-left: 1rem !important; 
+        font-size: 1.8rem; 
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .write { font-size: 1.8rem; }
+    .hi2 { 
+        font-size: 1rem; 
+        padding: 0 1rem !important; 
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+    }
+    .advanced { 
+        grid-template-areas: 'ad1' 'ad2' 'ad3' !important; 
+        grid-template-columns: 1fr !important; 
+        margin-top: 3rem !important; 
+        width: 100% !important; 
+        max-width: 100vw !important;
+        padding: 0 1rem !important; 
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .ad1, .ad3 { 
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .ad2 { 
+        margin: 2rem auto !important; 
+        width: 100% !important; 
+        max-width: 300px !important;
+        box-sizing: border-box !important;
+    }
+    .ad2 img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box !important;
+    }
+    .feature-item { flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
+    .feature-number { width: 80px; height: 80px; font-size: 1.5rem; }
+    .feature-title { font-size: 1.5rem; }
+    .feature-description { font-size: 0.9rem; }
+    .row2 { 
+        flex-direction: column !important; 
+        align-items: center !important; 
+        gap: 2rem !important; 
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .hi1 {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 1rem !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .photo {
+        padding-left: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .photo img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box !important;
+    }
+    .header {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+    .cs, .cs1 {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        box-sizing: border-box !important;
+    }
+    .cs img, .cs1 img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box !important;
+    }
+    .members { 
+        padding-left: 1rem !important; 
+        font-size: 1.8rem; 
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .location { 
+        margin: 1rem !important; 
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .city { font-size: 1.5rem; }
+    .cafe_locations, .cafe_locations1 { width: 100% !important; max-width: 100% !important; height: auto !important; box-sizing: border-box !important; }
+    .locations_content { 
+        padding: 1rem !important; 
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .TA1 { 
+        width: 100% !important; 
+        max-width: 100vw !important; 
+        margin-top: 2rem !important; 
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important; 
+    }
+    .TA1 img { 
+        width: 100% !important; 
+        max-width: 100% !important; 
+        height: auto !important; 
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important; 
+    }
+    .card { 
+        width: 100% !important; 
+        max-width: 100% !important; 
+        position: relative !important; 
+        left: auto !important; 
+        top: auto !important; 
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .TA9 { 
+        max-width: 100% !important; 
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+    .TA1 fieldset { 
+        position: relative !important; 
+        top: auto !important; 
+        transform: none !important; 
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        left: auto !important;
+    }
+    .overlay_TA {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .shop-container { 
+        flex-direction: column; 
+        width: 100% !important; 
+        max-width: 100vw !important; 
+        overflow-x: hidden; 
+        box-sizing: border-box !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .products_sidebar { 
+        width: 100% !important; 
+        max-width: 100vw !important;
+        position: relative !important; 
+        padding: 1rem !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .shop-main-content { 
+        padding: 1rem !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .filter_condition { margin: 1rem 0; }
+    .all_products { 
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 1rem !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .products { 
+        padding: 1rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .product_pic { 
+        width: 100% !important; 
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    table { 
+        width: 100% !important; 
+        max-width: 100vw !important; 
+        margin-left: 0 !important; 
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .table_head, #total_table { 
+        width: 100% !important; 
+        max-width: 100vw !important; 
+        font-size: 0.85rem; 
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .item_pic { 
+        width: 60px !important; 
+        height: 60px !important;
+        max-width: 60px !important;
+    }
+    .quantity_change { 
+        flex-direction: column !important; 
+        gap: 0.5rem !important;
+    }
+    .total_items {
+        margin-bottom: 10rem !important;
+        font-weight: bold !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        font-size: 1.4rem !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        text-align: center !important;
+    }
+    .checkout_but {
+        width: auto !important;
+        max-width: 90% !important;
+        margin-right: 1rem !important;
+        margin-left: auto !important;
+        float: none !important;
+    }
+
+    #contact1 {
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .TA2 fieldset { 
+        width: 95% !important; 
+        max-width: 100% !important;
+        padding: 1.5rem !important; 
+        box-sizing: border-box !important;
+    }
+    
+    .catering-menu-section { 
+        width: 100% !important;
+        max-width: 100vw !important;
+        padding: 2rem 1rem !important; 
+        box-sizing: border-box !important;
+    }
+    
+    .catering-grid { 
+        grid-template-columns: 1fr !important; 
+        gap: 1.5rem; 
+        padding: 1rem !important; 
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .catering-title { 
+        font-size: 1.8rem; 
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .footer-bottom { 
+        flex-direction: column !important; 
+        gap: 1rem !important; 
+        padding: 1.5rem 1rem !important; 
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+    }
+    .footer-bottom img { 
+        width: 100px !important; 
+        max-width: 100px !important;
+    }
+    .copyright, .tagline { 
+        font-size: 0.9rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Convert all absolute/fixed positioned elements to relative (except navbar menu) */
+    .about_homepage_text,
+    .about_author,
+    .about_button,
+    .no_count,
+    .TA1 fieldset,
+    .overlay_TA,
+    .card,
+    .navigation_manual,
+    .navigation_auto,
+    .item_remove,
+    .remove_header,
+    .fa-circle-xmark,
+    .fa-trash-can {
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+
+    /* Keep navbar menu fixed but constrain it */
+    .menu-overlay,
+    .navbar_links {
+        position: fixed !important;
+    }
+
+    /* Catch-all: Ensure all images and media don't exceed viewport */
+    img, video, iframe, embed, object {
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Ensure all form elements are constrained */
+    input, textarea, select, button {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Ensure pseudo-elements don't cause overflow */
+    *::before,
+    *::after {
+        max-width: 100vw !important;
+    }
+
+    /* Final catch-all: prevent any element from exceeding viewport */
+    div, section, article, aside, header, footer, nav {
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Ensure viewport meta tag is respected - force no horizontal scroll */
+    @supports (overflow-x: clip) {
+        html, body {
+            overflow-x: clip !important;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar { padding: 0.8rem; }
+    .logo { height: 2.5rem; }
+    .about_homepage_text { font-size: 0.9rem; padding: 1rem; }
+    .about_author { font-size: 1rem; }
+    .all_products { grid-template-columns: 1fr; }
+    .filter_condition select { width: 100%; font-size: 0.9rem; }
+    .origin { font-size: 1.5rem; }
+    .write { font-size: 1.5rem; }
+    .feature-number { width: 60px; height: 60px; font-size: 1.2rem; }
+    .feature-title { font-size: 1.2rem; }
+    .feature-description { font-size: 0.85rem; }
+}
+
+

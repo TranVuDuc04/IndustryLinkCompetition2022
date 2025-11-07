@@ -1,0 +1,7 @@
+/* Desktop-specific overrides live here. Base styles remain in src/styles.css. */
+
+@media (min-width: 769px) {
+    /* Example hook area for desktop-only tweaks if needed later. */
+}
+
+
